@@ -70,10 +70,13 @@ We can store the data inside the browser as `key-value` pairs.
 * localStorage > sessionStorage > cookies
 
 #### localStorage
-* The Local Storage allows web applications to store data locally within the user's browser. It is a Storage Object. Data can be stored in the form of __key-value__ pairs.
-* Local storage data never expires.
+* The Local Storage allows web applications to store data locally within the user's browser. It is a Storage Object. Data can be stored in the form of __key : value__ pairs.
+* Local Storage data never expires unless manually deleted or the browser is uninstalled..
 * Local Storage can store up to 5 to 10 MB of data per domain.
+* It works as Synchronously.
 * localStorage accepts to store JSON data.
+* When you use different tabs also, the localStorage data remains same.
+* When to use : User Preferences -> darkMode/lightMode, Non-sensitive data.
 
 ```js
 localStorage.setItem("Key", "Value");
